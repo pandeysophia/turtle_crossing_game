@@ -7,6 +7,7 @@ from scoreboard import Scoreboard
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.tracer(0)
+screen.title("Turtle Crossing Game")
 
 player = Player()
 car_manager = CarManager()
@@ -14,6 +15,7 @@ scoreboard = Scoreboard()
 
 screen.listen()
 screen.onkeypress(player.go_up, "Up")
+screen.onkeypress(player.go_down, "Down")
 
 
 game_is_on = True
